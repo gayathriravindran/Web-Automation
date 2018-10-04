@@ -1,0 +1,62 @@
+# Introduction About Selenium:
+  ## Challenges with Manual testing:
+    - Manual testing skill is very important to identify the use cases and with that we can automate the same use cases in Selenium. 
+    - Repeation of same validation makes testing boring, tedious, time consuming, making mistakes/errors. 
+  ## Automation Advantage:
+    - Script execution, Test result capturing and generating/getting test results. 
+    - Faster Execution(It takes time to create the automation suite but running is very faster), Less man power, More accuracy, supports light out execution, supports regression. 
+    - Regression Testing: It's a set of test suite which might have any number of test cases but we run this suite when there is a bug fix or feature enhancement then the tester need to run the test suite that many times to make sure nothing is broken due to the new changes. 
+  ## Selenium:
+    - It is a web browser Automation tool.
+    - Functional Testing: Basically test the call flows, signing up is a basic test. Fill the signup form, DB for data storage. 
+    - Automation Testing: Entire test case suites. 
+    ## Dis-Advantage:
+      - ONLY Web Automat on tool.
+      - No Reportig faciity. For this we need to write our own framework/Third party tools like TestNG. 
+      - Can't compare 2 images. We can take screen shot. 
+      - No support team.
+    ## Advantages:
+      - Open source
+      - Multiple languages like, java, JS, Python, Ruby, C#, etc. 
+      - Supports multiple browsers and OS.
+      - Supports HTML Unit as well, that is Headless browser.
+      - Supports Parallel running of test cases, that is we can run the same test cases into different brwsers at the same time. This can be achived by implementing TestNG along with Selenium. 
+ 
+ ## Selenium suite of tools:
+  There are four components:
+    - IDE
+    - RC(Remote Control)
+    - Web driver
+    - Grid
+    Note: RC has deprecated.
+    - Selenium V1 : We have IDE + RC + Grid
+    - Selenium V2 : IDE + RC + Web driver + Grid
+    - Selenium V3 : IDE + RC + Web Driver + GridRC is also a tool to write Scripts to automate the web page. 
+    
+    
+    ### Selenium IDE:
+       - It comes ONLY with FIREFOX & CHROME as a Plug in and its used for creating and executing Test cases. 
+       - This is mainly for prototyping and syntaxing not for full fledged automation. Another thing is we cant do LOPPING(cant run the method/function again and again). 
+       - Can't take Screenshot here. 
+       - Can't do Data driven testing(Say for example pass the test data and run the test). 
+       - Dynamic page/web site cant work as expected. 
+       - It record and excutes the code. It also allows the user to export the code in java/JS/C# to understand the structure of the selenium code support. 
+       - Once we record and get the recorded selenese commands on the recorded window. 
+  ### Selenium RC(Remote Control):
+      - RC is also a tool to write Scripts to automate the web page. 
+      - RC is deprecated from Selenium 3 onwards. 
+      - It communicate with Selenium RC Server with basic http GET/POST request to communicate. 
+      - RC is deprecated from Selenium 3 onwards. 
+      - It communicate with Selenium RC Server with basic http GET/POST request to communicate. 
+  ### Selenium RC Vs Web Driver:
+      - Json Huggings(who is a first tester created Selenium Script) to ease his testing cycle, since it is more repeated and it more time consuming. 
+      - He wrote a Java script to automatically control the browser actions and he named it as "JavaScriptTestRunner". 
+            - 1. "JavaScriptTestRunner" is called "Selenium Core"
+            - 2. "Same Origin Policy Issue" --> Java Script code doesnt allow the script to run in different domain. It work only on the same domain(Google.com it will work only in Google sites, it will not work on other web domains like yahoo.com, etc)
+            - 3. "Same Origin Policy issue" is the biggest drawback in Selenium Core. 
+            - 4. "Paul Hammant" is another thought work engineer who created Selenium RC. 
+ 
+# RC & Web Driver Similarities:
+  - Both Supports Many programming languages to write code. 
+  - Supports multiple browsers
+  - 
