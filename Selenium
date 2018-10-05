@@ -54,9 +54,44 @@
             - 1. "JavaScriptTestRunner" is called "Selenium Core"
             - 2. "Same Origin Policy Issue" --> Java Script code doesnt allow the script to run in different domain. It work only on the same domain(Google.com it will work only in Google sites, it will not work on other web domains like yahoo.com, etc)
             - 3. "Same Origin Policy issue" is the biggest drawback in Selenium Core. 
-            - 4. "Paul Hammant" is another thought work engineer who created Selenium RC. 
+            - 4. "Paul Hammant" is another thought work engineer who created Selenium RC.
+            - 5. Selenium RC(Remote Control):
+                - This is a Server.
+                - This server acts as a HTTP Proxy to "trick" Selenium core and the web comes from the same domain.
+                - This is happening in a way "Proxy injection Method".
+                - 
  
 # RC & Web Driver Similarities:
   - Both Supports Many programming languages to write code. 
   - Supports multiple browsers
   - 
+  
+  Selenium Installation:
+  1. Download and install Java EE edition on the system. 
+  2. Create a new Java project. 
+  3. Right click and select "Configuaration" then select "Maven java". 
+  4. Go to Google and type "selenium maven dependencies" and choose the first link(Maven Repository link). (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/2.53.0)
+  5. Select "https://mvnrepository.com/artifact/org.seleniumhq.selenium".
+  6. Select latest verison and click on 3.14.0(https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.14.0) and copy the dependencies present on the bottom
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.14.0</version>
+</dependency>
+
+  7. Go back to the eclipse window and click on pom.xml and add a new XML tag <dependencies> and add the copied selenium dependencies as mentioned below:
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.14.0</version>
+    </dependency>
+  </dependencies>
+  
+  8. Once the Mavan POM dependencies are added, download the Chrome driver from thsi link: http://chromedriver.chromium.org/downloads
+  9. Once the Driver is downloaded, we need to set the driver location on the code,
+        System.setProperty("webdriver.chrome.driver","/Users/gayathrir/Documents/MyWorkspace/JetPOC/WebDrivers/chromedriver");
+  10. To Open a web page, "driver.navigate.to("www.google.com");
+  
