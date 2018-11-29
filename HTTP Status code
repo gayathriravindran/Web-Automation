@@ -1,0 +1,5 @@
+100,101,102 - Continue, switching protocol, Processing
+200 - Successive message(Success, Accepted, Non-Authoritative, no content, reset content, Partial content)
+300- Rediection mesage(Multiple choice, Moved permanently, Found)
+400- Client error ( Bad request, unautorized, etc)
+500 - Server error(Internal server error, unauthorized, forbidden, etc)
